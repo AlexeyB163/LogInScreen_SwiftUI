@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct LogInScreen_SwiftUIApp: App {
+    @StateObject var userDefaults = StorageManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(userDefaults)
         }
     }
 }

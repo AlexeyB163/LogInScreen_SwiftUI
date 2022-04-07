@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var storage: StorageManager
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Group {
+            if !storage.fetchLogin().isEmpty {
+                TimerView()
+            } else {
+                RegisterView()
+            }
+        }
     }
 }
 
@@ -19,3 +26,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

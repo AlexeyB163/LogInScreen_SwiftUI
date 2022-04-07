@@ -29,11 +29,7 @@ struct TimerView: View {
     }
 }
 
-//struct TimerView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TimerView()
-//    }
-//}
+
 
 struct ButtonStartView: View {
     @ObservedObject var timer:TimeCounter
@@ -70,5 +66,12 @@ struct ButtonLogOutView: View {
     
     private func logOut(){
         storage.delete()
+    }
+}
+
+struct TimerView_Previews: PreviewProvider {
+    static var previews: some View {
+        TimerView()
+            .environmentObject(StorageManager())
     }
 }

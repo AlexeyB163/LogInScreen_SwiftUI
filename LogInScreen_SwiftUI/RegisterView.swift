@@ -9,8 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     @State private var userName = ""
-    @StateObject private var userManager = UserManager()
-    @EnvironmentObject private var storage: StorageManager
+    @EnvironmentObject var storage: StorageManager
     @State private var characterSymbols = 0
     
     var body: some View {
@@ -39,8 +38,7 @@ struct RegisterView: View {
     }
     
     private func setUserName() {
-        userManager.name = userName
-        storage.save(login: userManager.name)
+        storage.login = userName
     }
     
     private func getColorCounter() -> Color {

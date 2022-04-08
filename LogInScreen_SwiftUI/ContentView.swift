@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var storage: StorageManager
-
+    
+    @EnvironmentObject var storage: StorageManager
     var body: some View {
         Group {
-            if !storage.fetchLogin().isEmpty {
+            if !storage.login.isEmpty {
                 TimerView()
             } else {
                 RegisterView()

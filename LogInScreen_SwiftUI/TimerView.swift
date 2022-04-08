@@ -9,12 +9,12 @@ import SwiftUI
 
 struct TimerView: View {
     
-    @EnvironmentObject private var storage: StorageManager
     @StateObject private var timer = TimeCounter()
+    @EnvironmentObject var storage: StorageManager
     
     var body: some View {
         VStack {
-            Text("Hi, \(storage.fetchLogin())! ")
+            Text("Hi, \(storage.login)! ")
                 .font(.largeTitle)
                 .padding(.top,20)
                 .padding(.bottom, 30)
@@ -23,13 +23,11 @@ struct TimerView: View {
                 .padding(.bottom, 100)
             ButtonStartView(timer: timer)
             Spacer()
-            ButtonLogOutView()
+            ButtonLogOutView(storage: $storage.login)
                 .padding(.bottom, 40)
         }
     }
 }
-
-
 
 struct ButtonStartView: View {
     @ObservedObject var timer:TimeCounter
@@ -49,7 +47,7 @@ struct ButtonStartView: View {
 }
 
 struct ButtonLogOutView: View {
-    @EnvironmentObject var storage: StorageManager
+    @Binding var storage: String
     
     var body: some View {
         Button(action: {logOut()}) {
@@ -65,13 +63,12 @@ struct ButtonLogOutView: View {
     }
     
     private func logOut(){
-        storage.delete()
+        storage = ""
     }
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView()
-            .environmentObject(StorageManager())
     }
 }

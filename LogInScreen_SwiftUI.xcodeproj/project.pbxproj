@@ -11,7 +11,6 @@
 		CED74C1727FD5D0F00EA5F72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED74C1627FD5D0F00EA5F72 /* ContentView.swift */; };
 		CED74C1927FD5D1100EA5F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED74C1827FD5D1100EA5F72 /* Assets.xcassets */; };
 		CED74C1C27FD5D1100EA5F72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED74C1B27FD5D1100EA5F72 /* Preview Assets.xcassets */; };
-		CED74C2527FD5E3300EA5F72 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED74C2427FD5E3300EA5F72 /* UserManager.swift */; };
 		CED74C2727FD61CD00EA5F72 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED74C2627FD61CD00EA5F72 /* RegisterView.swift */; };
 		CED74C2B27FD6C1100EA5F72 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED74C2A27FD6C1100EA5F72 /* TimeCounter.swift */; };
 		CED74C2D27FEA61900EA5F72 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED74C2C27FEA61800EA5F72 /* StorageManager.swift */; };
@@ -24,7 +23,6 @@
 		CED74C1627FD5D0F00EA5F72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CED74C1827FD5D1100EA5F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED74C1B27FD5D1100EA5F72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CED74C2427FD5E3300EA5F72 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		CED74C2627FD61CD00EA5F72 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CED74C2A27FD6C1100EA5F72 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		CED74C2C27FEA61800EA5F72 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -63,11 +61,10 @@
 			children = (
 				CED74C1427FD5D0F00EA5F72 /* LogInScreen_SwiftUIApp.swift */,
 				CED74C1627FD5D0F00EA5F72 /* ContentView.swift */,
+				CED74C2627FD61CD00EA5F72 /* RegisterView.swift */,
 				CED74C2E27FF5AFC00EA5F72 /* TimerView.swift */,
 				CED74C2C27FEA61800EA5F72 /* StorageManager.swift */,
 				CED74C2A27FD6C1100EA5F72 /* TimeCounter.swift */,
-				CED74C2627FD61CD00EA5F72 /* RegisterView.swift */,
-				CED74C2427FD5E3300EA5F72 /* UserManager.swift */,
 				CED74C1827FD5D1100EA5F72 /* Assets.xcassets */,
 				CED74C1A27FD5D1100EA5F72 /* Preview Content */,
 			);
@@ -155,7 +152,6 @@
 				CED74C2F27FF5AFC00EA5F72 /* TimerView.swift in Sources */,
 				CED74C1727FD5D0F00EA5F72 /* ContentView.swift in Sources */,
 				CED74C2727FD61CD00EA5F72 /* RegisterView.swift in Sources */,
-				CED74C2527FD5E3300EA5F72 /* UserManager.swift in Sources */,
 				CED74C2D27FEA61900EA5F72 /* StorageManager.swift in Sources */,
 				CED74C2B27FD6C1100EA5F72 /* TimeCounter.swift in Sources */,
 				CED74C1527FD5D0F00EA5F72 /* LogInScreen_SwiftUIApp.swift in Sources */,
